@@ -1,0 +1,145 @@
+body 
+{
+    font-family: $font-kumbh;
+    background-color: $dark-cyan !important;
+    padding-top: 120px;
+    background: url(/images/bg-pattern-top.svg) top -600px right 40vw no-repeat,
+    url(/images/bg-pattern-bottom.svg) bottom -750px left 30vw no-repeat;
+
+    @include responsive(desktop) {
+        background: url(/images/bg-pattern-top.svg) top -550px right 50vw no-repeat,
+        url(/images/bg-pattern-bottom.svg) bottom -700px left 50vw no-repeat;
+    }
+}
+
+
+.bg__picture
+{
+    background: url(/images/bg-pattern-bottom.svg);
+}
+
+.card 
+{
+    background-color: #fff;
+    border-radius: 15px;
+    width: 350px;
+    height: 62vh;
+    margin: auto;
+    position: relative;
+
+    .card__bg
+    {
+            background-image: url(/images/bg-pattern-card.svg);
+            width: 350px;
+            height: 152px;
+            position: relative;
+            border-radius: 15px 15px 0 0;
+
+            .card__img
+            {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                img
+                {
+                    width: 100px;
+                    border-radius: 50%;
+                    border: 6px solid #fff;
+                }
+            }
+    }
+
+    .card__content
+    {
+        margin-top: 65px;
+        text-align: center;
+        position: relative;
+        padding-bottom: 30px;
+
+        h3 
+        {
+            color: $very-dark-desaturated-blue;
+            font-size: 20px;
+            padding-top: 15px;
+
+            span 
+            {
+                color: $dark-grayish-blue;
+                margin-left: 5px;
+                font-weight: 400;
+            }
+        }
+
+        p
+        {
+            font-size: 15px;
+            color: $dark-grayish-blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .card__profile
+    {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: -5px auto;
+        padding: 0 45px;
+        color: $very-dark-desaturated-blue;
+
+        .card__followers
+        {
+
+            h3 
+            {
+                margin-bottom: -8px;
+                font-size: 20px;
+            }
+
+            p 
+            {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .card__likes 
+        {
+            h3
+            {
+                margin-bottom: -8px;
+                font-size: 20px;
+            }
+
+            p 
+            {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .card__photos
+        {
+
+            h3
+            {
+                margin-bottom: -8px;
+                font-size: 20px;
+                margin-right: 20px;
+            }
+
+            p 
+            {
+                font-size: 12px;
+                letter-spacing: 1px;
+                margin-right: 15px;
+            }
+
+        }
+    }
+}
